@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.11 on darwin)" generated="2024-10-07T08:45:19.487768" rpa="false" schemaversion="5">
+<suite id="s1" name="ASVAB AUTOMATION TEST" source="/Users/hongtuan/Desktop/PythonProjects/ASVAB_AUTOMATION_TEST">
+<suite id="s1-s1" name="TestCase" source="/Users/hongtuan/Desktop/PythonProjects/ASVAB_AUTOMATION_TEST/TestCase">
+<suite id="s1-s1-s1" name="OnboardingTest" source="/Users/hongtuan/Desktop/PythonProjects/ASVAB_AUTOMATION_TEST/TestCase/OnboardingTest.robot">
+<test id="s1-s1-s1-t1" name="RunTestCase" line="9">
+<kw name="Open ASVAB Application" owner="CommonKeyword">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-10-07T08:45:41.075632" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-10-07T08:45:41.071851" elapsed="0.008095">No application is open</status>
+</kw>
+<msg time="2024-10-07T08:45:41.084439" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-10-07T08:45:41.086033" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20239ms.
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20239ms.
+    at getResponseForW3CError (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)</msg>
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2024-10-07T08:45:19.591714" elapsed="21.495256">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20239ms.
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20239ms.
+    at getResponseForW3CError (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)</status>
+</kw>
+<doc>Open the application</doc>
+<status status="FAIL" start="2024-10-07T08:45:19.590885" elapsed="21.496397">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20239ms.
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20239ms.
+    at getResponseForW3CError (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.087704" elapsed="0.000179"/>
+</kw>
+<kw name="Click Next Button" owner="OnboardingPage">
+<doc>Click the Next button</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.088119" elapsed="0.000071"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.088322" elapsed="0.000226"/>
+</kw>
+<kw name="Click Next Button" owner="OnboardingPage">
+<doc>Click the Next button</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.088720" elapsed="0.000075"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.088930" elapsed="0.000077"/>
+</kw>
+<kw name="Click Start Button" owner="OnboardingPage">
+<doc>Click the Start button</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.089150" elapsed="0.000070"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.089346" elapsed="0.000108"/>
+</kw>
+<kw name="Click Skip Button" owner="LoginPage">
+<doc>Click the Skip button</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.089577" elapsed="0.000074"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.089798" elapsed="0.000057"/>
+</kw>
+<kw name="Click Select Option Button" owner="OnboardingPage">
+<doc>Click the Select Option button</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.090054" elapsed="0.000059"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.090204" elapsed="0.000048"/>
+</kw>
+<kw name="Click Skip Diagnostic Button" owner="TestPage">
+<doc>Click the Skip Diagnostic button</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.090704" elapsed="0.000193"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.091293" elapsed="0.000079"/>
+</kw>
+<kw name="Start mechanical test" owner="TestPage">
+<doc>Start the mechanical test</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.091550" elapsed="0.000063"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.091718" elapsed="0.000062"/>
+</kw>
+<kw name="Select Only Correct Answer" owner="TestPage">
+<doc>Select the correct answer</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.091923" elapsed="0.000053"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.092096" elapsed="0.000056"/>
+</kw>
+<kw name="Close ASVAB Application" owner="CommonKeyword">
+<doc>Close the application</doc>
+<status status="NOT RUN" start="2024-10-07T08:45:41.092271" elapsed="0.000052"/>
+</kw>
+<doc>Test the onboarding flow</doc>
+<status status="FAIL" start="2024-10-07T08:45:19.588804" elapsed="21.503699">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20239ms.
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20239ms.
+    at getResponseForW3CError (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)</status>
+</test>
+<status status="FAIL" start="2024-10-07T08:45:19.516883" elapsed="21.576175"/>
+</suite>
+<status status="FAIL" start="2024-10-07T08:45:19.515366" elapsed="21.578402"/>
+</suite>
+<status status="FAIL" start="2024-10-07T08:45:19.492880" elapsed="21.601369"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="ASVAB AUTOMATION TEST">ASVAB AUTOMATION TEST</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCase">ASVAB AUTOMATION TEST.TestCase</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="OnboardingTest">ASVAB AUTOMATION TEST.TestCase.OnboardingTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-07T08:45:41.084439" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
